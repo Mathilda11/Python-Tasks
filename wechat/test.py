@@ -66,7 +66,7 @@ def simple_reply(msg):
     if(begin>0 and end>0):
         s = s[begin+1:end-1]
         try:
-            s= eval(s)
+            s= eval(s) #将字符串s当成有效的表达式来求值并返回计算结果
         except SyntaxError:
             if(s.find('加')>0):
                 s= s.replace('加','+')
