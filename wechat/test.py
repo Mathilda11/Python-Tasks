@@ -14,8 +14,8 @@ def ec():
 
 itchat.auto_login(hotReload=True, loginCallback=lc, exitCallback=ec)  # 登录微信（二维码）
 
-#UserName = itchat.search_friends(name='宝')[0]["UserName"]
-UserName = itchat.search_friends(name='公主裙·')[0]["UserName"]
+
+UserName = itchat.search_friends(name='myusername')[0]["UserName"]
 def send_news():
     itchat.send_msg('YEEZY西安',UserName)
 sched = BackgroundScheduler()
