@@ -32,7 +32,7 @@ def getChapterContent(each_chapter_dict):
         f.write('\n\n')
 
 
-# 获取小说各个章节的名字和url
+# 获取小说各个章节的标题和url
 def getChapterInfo(novel_url):
     chapter_html = requests.get(novel_url, headers=headers).text
     soup = BeautifulSoup(chapter_html, 'lxml')
