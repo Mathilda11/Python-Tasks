@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Author : Woolei
-# @File : book136_singleprocess.py
+
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
+import re
 import requests
 import time
 import os
@@ -39,7 +39,6 @@ def getChapterInfo(novel_url):
     chapter_list = soup.find_all('li')
     chapter_all_dict = {}
     for each in chapter_list:
-        import re
         chapter_each = {}
         chapter_each['name'] = each.find('a').get_text()  # 获取章节名字
         chapter_each['chapter_url'] = each.find('a')['href']  # 获取章节url
@@ -50,7 +49,6 @@ def getChapterInfo(novel_url):
 
 if __name__ == '__main__':
     start = time.clock()  # 记录程序运行起始时间
-    #novel_url = 'http://www.136book.com/buyuqingchengbuyuni/'
     novel_url = 'http://www.136book.com/shinianyipinwenruyanquanji/'
     novel_info = getChapterInfo(novel_url)  # 获取小说章节记录信息
     dir_name = u'小说'
