@@ -4,7 +4,7 @@
 基于Requests库和BeautifulSoup库。
 
 - 步骤
-   - 调用Requests库获得页面html
+   - 调用Requests库发送url请求获得页面html
    - 调用BeautifulSoup库的lxml解析器来解析页面html
    - 对解析的soup进行查找匹配：
       使用选择器查找标签内容，调用re库使用正则表达式对某些内容进行过滤
