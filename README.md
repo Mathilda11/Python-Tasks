@@ -12,15 +12,15 @@
     - 对爬取的内容进行格式处理并保存到本地
 
 ## 🍒与微信交互
--  :palm_tree:[实现adidas公众号自动回复抢购（初级版）](https://github.com/Mathilda11/Python-Tasks/tree/master/wechat)  
+-  :palm_tree:[实现adidas个人号自动回复抢购（初级版）](https://github.com/Mathilda11/Python-Tasks/tree/master/wechat)  
 
 - 任务
-   - 准时发送"YEEZY西安"至adidas公众号，根据回复内容获取个人信息格式要求，发送正确的个人信息。
-   - 根据公众号随机回复的计算题（可能包含中文），发送正确答案。
+   - 准时发送"YEEZY西安"至adidas个人号，根据回复内容获取个人信息格式要求，发送正确的个人信息。
+   - 根据回复的计算题（可能包含中文），发送正确答案。
 
 基于itchat微信接口、APScheduler定时任务框架。
 - 步骤
    - 登录微信（二维码）
-   - 获取公众号信息
-   - 实现自动和公众号交互的方法，利用APScheduler定时发送
+   - 获取需要交互的用户信息
+   - 实现自动交互的方法，利用APScheduler定时发送
 
